@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+
+    <style>
+        .container {
+            background-color: rgb(67, 28, 177);
+            padding: 30px;
+            height: 42rem;
+            margin: 15px;
+            color: white;
+        }
+
+        .label_1 {
+            background-color: rgb(207, 91, 91);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            width: 90px;
+            position: absolute;
+            top: 4px;
+            left: 70px;
+        }
+        .label_2{
+            background-color: rgb(16, 3, 128);
+            color: rgb(255, 255, 255);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 74px;
+            position: absolute;
+            top: 40px;
+            left: 50px;
+        }
+        .form1 {
+            background-color: rgb(207, 91, 91);
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+        .table1 {
+            margin-top: 40px;
+        }
+        .table2 {
+            margin-top: 80px;
+        }
+
+        .selector {
+            width: 20%;
+            margin-top: 300px;
+            border: none;
+        }
+
+        button {
+            position: absolute;
+            bottom: 20px;
+            left: 50px;
+            color: white;
+            background-color: rgb(207, 91, 91);
+            padding:5px 10px;
+        }
+
+        button:hover {
+            background-color: rgb(16, 3, 128);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="label_1">Personal Data</div>
+        <div class="label_2">Your Name</div>
+        <div class="container">
+    
+            <div class="form1">
+                <table class="table1">
+                    <tr>
+                        <td><label for="name">First Name : </label></td>
+                        <td><input type="text" id="name" placeholder="ex: Nagham"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="firstName">Last Name : </label></td>
+                        <td><input type="text" id="firstName" placeholder="ex: Osama"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <table class="table2">
+                <tr>
+                    <td><label for="phone">Your Phone : </label></td>
+                    <td><input type="tel" id="phone" placeholder="+20"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email : </label></td>
+                    <td><input type="email" id="email" placeholder="ex: example@example.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password : </label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="rePassword">Re-Password : </label></td>
+                    <td><input type="password" id="rePassword"></td>
+                </tr>
+            </table>
+
+            <select class="selector">
+                <optgroup label="Egypt">
+                    <option value="Cairo">Cairo</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Mansoura">Mansoura</option>
+                </optgroup>
+                <optgroup label="UEA">
+                    <option value="Abu Dhabi">Abu Dhabi</option>
+                    <option value="Ajman">Ajman</option>
+                    <option value="Sharjah">Sharjah</option>
+                </optgroup>
+                <optgroup label="Saudi Arabia">
+                    <option value="Riyadh">Riyadh</option>
+                    <option value="Jeddah">Jeddah</option>
+                    <option value="Dammam">Dammam</option>
+                </optgroup>
+            </select>
+            <button type="submit">SUBMIT</button>
+        </div>
+
+        
+    </div>
+</body>
